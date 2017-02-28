@@ -42,15 +42,19 @@ p {
     color: rgba(0, 0, 0, 0.7);
     margin-top: 60px;
 }
+.learn-more-btn.black {
+    background-color: #232323;
+    color: #ffffff;
+    border: none;
+}
 
 .navbar-default .navbar-collapse {
-    border: none;
+    /*border: none;*/
 }
 .navbar.navbar-default {
     border-radius: 0;
     background-color: #FFFFFF;
     margin-bottom: 0;
-    height: 80px;
 }
 .navbar.navbar-default .container-fluid {
     padding: 0 100px;
@@ -87,8 +91,8 @@ p {
     float: left;
     width: 100%;
     height: calc(100vh - 81px);
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 30px;
+    padding-left: 30px;
 }
     .slide-1 .top h1 {
         color: #FFFFFF;
@@ -108,21 +112,25 @@ p {
 .slide-2,
 .slide-3,
 .slide-4,
-.slide-5 {
+.slide-5,
+.slide-6 {
     padding: 60px 0;
 }
     .slide-2 h2,
     .slide-3 h2,
     .slide-4 h2,
-    .slide-5 h2 {
+    .slide-5 h2,
+    .slide-6 h2 {
         font-size: 48px;
         color: rgba(0, 0, 0, 0.7);
         margin-top: 0;
+        margin-bottom: 30px;
     }
     .slide-2 p,
     .slide-3 p,
     .slide-4 p,
-    .slide-5 p {
+    .slide-5 p,
+    .slide-6 p {
         display: block;
         max-width: 750px;
         margin: 10px auto 60px;
@@ -216,3 +224,135 @@ p {
         .slide-4 .case:last-child {
             background: url("../images/mask.png") center;
         }
+
+.slide-5 .testimonials-carousel {
+    padding: 0;
+    margin-bottom: 30px;
+}
+    .slide-5 .testimonials-carousel .carousel-inner {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        background-color: #F6F6F6;
+    }
+    .slide-5 .testimonials-carousel .testimonial p {
+        color: rgba(0, 0, 0, 0.5) !important;
+    }
+    .slide-5 .testimonials-carousel .testimonial .test-icon {
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #C4C4C4;
+        border-radius: 100px;
+        display: inline-block;
+    }
+            .slide-5 .testimonials-carousel .testimonial .test-icon > img {
+                width: 20px;
+            }
+    .slide-5 .testimonials-carousel .testimonial .description {
+        margin: 0 auto 30px;
+    }
+    .slide-5 .testimonials-carousel .testimonial .heading {
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .slide-5 .testimonials-carousel .testimonial .sub-heading {
+        margin-bottom: 30px;
+    }
+
+    .slide-5 .testimonials-carousel .carousel-indicators {
+        bottom: -60px;
+    }
+        .slide-5 .testimonials-carousel .carousel-indicators li {
+            background: #ffffff;
+            opacity: .2;
+            width: 14px;
+            height: 14px;
+        }
+        .slide-5 .testimonials-carousel .carousel-indicators .active {
+            width: 16px;
+            height: 16px;
+            opacity: 1;
+        }
+
+#contactForm {
+
+}
+    #contactForm input[type=text],
+    #contactForm input[type=email] {
+        display: block;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #contactForm .last {
+        margin-bottom: 0 !important;
+    }
+    #contactForm input:focus{
+        outline: none;
+    }
+
+#footer {
+    display: block;
+    width: 100%;
+    background-color: #232323;
+}
+
+.footer-inner {
+    padding: 30px 0;
+}
+
+
+@media (max-width: 1199px) {
+    .navbar.navbar-default .container-fluid {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 944px) {
+    .navbar.navbar-default .container-fluid {
+        padding: 0 10px;
+    }
+
+    .navbar-default .navbar-brand {
+        padding: 30px 10px 30px 20px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        padding: 30px 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-fluid>.navbar-header {
+        height: 60px;
+    }
+    .navbar-toggle {
+        margin-top: 14px !important;
+        margin-right: 30px !important;
+    }
+
+    .navbar-default .navbar-brand {
+        padding-top: 23px;
+        padding-left: 45px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        padding: 16px 10px;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .slide-1 .top {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
